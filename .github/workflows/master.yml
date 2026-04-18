@@ -1,0 +1,20 @@
+name: "PRD_DEPLOY"
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  terraform:
+    uses: ./.github/workflows/terraform.yml
+    with: 
+      environment: "prd"
+      aws-assume-role-arn: "arn:aws:iam::243373301854:role/github-actions-terraform-basics"
+      aws-region: "sa-east-1" 
+      aws-statefile-s3-bucket: "robertoscolar-sa-east-1-terraform-statefile"
+      aws-lock-dynamodb-table: "robertoscolar-sa-east-1-terraform-lock" 

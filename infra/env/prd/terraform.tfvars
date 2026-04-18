@@ -1,1 +1,0 @@
-bucket_name="prd-sa-east-1-buildrun-pipeline"

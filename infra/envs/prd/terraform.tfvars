@@ -1,0 +1,1 @@
+bucket_name="prd-robertoscolar-sa-east-1-buildrun-test-pipeline"
