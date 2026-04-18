@@ -1,1 +1,1 @@
-bucket_name="prd-sa-east-1-buildrun-pipeline"
+bucket_name="prd-robertoscolar-sa-east-1-buildrun-test-pipeline"
